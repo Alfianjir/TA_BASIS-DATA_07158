@@ -1,0 +1,26 @@
+body {
+            
+    font-family: poppins;
+    background-color: #F5FFFA;
+}
+.btn {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 5px; 
+}
+
+.nav{
+    font-size: 20px;
+    margin-left: 10px;
+    color: #ff6435; 
+}
+.cari{
+    position: absolute;
+    margin-left: 73%;
+    margin-bottom: 10px;
+}
+.bar{
+    position: absolute;
+    margin-left: 55%;
+    height: 36px;
+}

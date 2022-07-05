@@ -1,0 +1,30 @@
+CREATE TABLE buku (
+	id_buku int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    jenis_buku varchar(20),
+    Penerbit varchar(20),
+    tahun_terbit DATE,
+    id_kategori int,
+    id_penulis int
+);
+
+CREATE TABLE petugas (
+	id_petugas int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nama varchar(1024),
+    username varchar(1024),
+    password varchar(1024),
+    telp int
+);
+
+CREATE TABLE kategori (
+	id_kategori int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nama_kategori varchar(1024)
+);
+
+CREATE TABLE penulis (
+	id_penulis int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nama varchar(1024),
+    email varchar(1024)
+);
+
+ALTER TABLE buku ADD FOREIGN KEY (id_kategori) REFERENCES kategori(id_kategori)
+ALTER TABLE buku ADD FOREIGN KEY (id_penulis) REFERENCES penulis(id_penulis)
